@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tailwind Css Practise</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="app" class="text-gray-700 bg-white " style="font-family: 'Roboto', sans-serif;">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="#" class="font-bold text-3xl lg:text-4xl">SnowPack</a>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2  rounded text-gray-500  hover:text-gray-800 hover:shadow-2xl appearance-none focus:outline-none menu-btn">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="inline-flex">
+                    <li><a href="#" class="px-4 font-bold">Home</a></li>
+                    <li><a href="#" class="px-4 hover:text-gray-800">About</a></li>
+                    <li><a href="#" class="px-4 hover:text-gray-800">Contact</a></li>
+                </ul>
+            </div>
+            <div
+                class="mobile-nav absolute left-0 top-0 w-72 bg-gradient-to-b from-rose-500 via-red-400 to-rose-300 text-white  h-screen text-2xl hidden shadow-2xl">
+                <ul class="flex flex-col items-center mt-44 ">
+                    <li><a href="#" class="block pt-8 font-bold">Home</a></li>
+                    <li><a href="#" class="block pt-8 hover:text-gray-200">About</a></li>
+                    <li><a href="#" class="block pt-8 hover:text-gray-200">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- start of hero section -->
+        <div class="bg-gradient-to-bl from-rose-600 via-red-500 to-rose-400 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-white text-4xl font-bold mb-2">Smarth Health Wristband!</h2>
+                <h3 class="text-gray-200 text-2xl mb-8">Monitor your health vitals smartly everywhere you go.</h3>
+                <button class="bg-white font-bold rounded-md px-8 py-4 shadow-lg tracking-wider uppercase">Pre
+                    Order</button>
+            </div>
+        </div>
+        <!-- end of hero section -->
+        <!-- start of features section -->
+        <section class="container mx-auto px-6 p-10">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Features</h2>
+
+            <div class="flex items-center flex-wrap mb-20">
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-3xl text-gray-800 font-bold mb-3">Excercise Metric</h4>
+                    <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristband is able to capture your vitals
+                        while
+                        you excercise. You can
+                        create different category of excercises and can track your vitals on the go.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="./assets/health.svg" alt="Monitoring Health">
+                </div>
+            </div>
+            <div class="flex items-center mb-20 flex-wrap">
+                <div class="w-full md:w-1/2">
+                    <img src="./assets/report.svg" alt="Reporting">
+                </div>
+                <div class="w-full md:w-1/2 pl-10">
+                    <h4 class="text-3xl text-gray-800 font-bold mb-3">Reporting</h4>
+                    <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristwatch can generate a comprehensive
+                        report
+                        on your vitals
+                        depending on your settings
+                        either daily, weekly, monthly, quarterly or yearly.</p>
+                </div>
+            </div>
+            <div class="flex items-center mb-20 flex-wrap">
+                <div class="w-full md:w-1/2 ">
+                    <h4 class="text-3xl text-gray-800 font-bold mb-3">Syncing</h4>
+                    <p class="text-gray-600 mb-8">Our Smart Health Monitoring Wristwatch allows you to sync data across
+                        all your mobile devices whether iOS, Android or
+                        Windows OS and also to your laptop whether MacOS, GNU/Linux or Windows OS.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="./assets/sync.svg" alt="Syncing">
+                </div>
+
+            </div>
+        </section>
+        <!-- end of features section -->
+
+        <!-- start of testimonials section -->
+        <section class="bg-gray-100 ">
+            <div class="container mx-auto px-6 py-20">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Testimonials</h2>
+                <!--  -->
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded py-2 shadow">
+                            <p class="text-gray-800 text-base px-6 mb-5">Monitoring and tracking my health vitals
+                                anywhere I
+                                go
+                                and on any platform I use has
+                                never been easier.</p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6"> - Jeremy Wambua</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <!--  -->
+
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded shadow py-2">
+                            <p class="text-gray-800 text-base px-6 mb-5">As an Athlete, this is the perfect product for
+                                me. I wear my Smart Health Monitoring Wristwatch everywhere I go, even
+                                in the bathroom since it's waterproof.</p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6"> - Walter Ndung'u</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <!--  -->
+
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded shadow py-2">
+                            <p class="text-gray-800 text-base px-6 mb-5">I don't regret buying this wearble gadget. One
+                                of the best gadgets I own!.</p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6"> - Stephie Muriuki</p>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                </div>
+
+
+        </section>
+        <!-- end of testimonials section -->
+        <!-- start of call to action section -->
+        <section class="bg-gradient-to-bl from-rose-600 via-red-500 to-rose-400">
+            <div class="container mx-auto px-6 text-center py-20">
+                <h2 class="text-4xl mb-6 font-bold text-white">Limited in Stock</h2>
+                <h3 class="my-4 text-2xl text-white">Get Yourself the Smart Health Monitoring Wristband!</h3>
+                <button class="bg-white font-bold rounded-md mt-6 px-8 py-4 shadow-lg tracking-wider">Pre Order</button>
+            </div>
+        </section>
+        <!-- end of call to action section -->
+        <!-- start of the footer section -->
+        <footer class="bg-gray-100">
+            <div class="container mx-auto px-6 pt-10 pb-6">
+                <div class="flex flex-wrap">
+                    <!--  -->
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Links</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">FAQ</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Help</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Support</a></li>
+                        </ul>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Terms</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Privacy</a></li>
+
+                        </ul>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Social</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Facebook</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Linkedin</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Company</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Official Blog</a>
+                            </li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">About Us</a></li>
+                            <li class="mt-2"><a href="#" class="hover:underline hover:text-rose-500">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </footer>
+        <!-- end of the footer section -->
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
